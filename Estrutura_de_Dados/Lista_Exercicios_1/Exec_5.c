@@ -18,10 +18,10 @@ int main(){
 
     } while (num <= 0);
 
-    quadrado = pow(num, 2);
-    cubo = pow(num, 3);
-    raiz_quadrada = sqrt(num);
-    raiz_cubica = cbrt(num);
+    quadrado = pow(num, 2);     //a
+    cubo = pow(num, 3);         //b
+    raiz_quadrada = sqrt(num);  //c
+    raiz_cubica = cbrt(num);    //d
 
     printf("O numero digitado ao quadrado: %.2f\n", quadrado);
     printf("O numero digitado ao cubo: %.2f\n", cubo);
