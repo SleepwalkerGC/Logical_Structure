@@ -1,17 +1,29 @@
+//Construa um programa que diga se um dado número N inteiro, recebido através do teclado, é PAR ou ÍMPAR
+
 #include <stdio.h>
 
 
-//Construa um programa que diga se um dado número N inteiro, recebido através do teclado, é PAR ou ÍMPAR.
+int main()
+{
+    int numero;
 
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &numero);
 
-int main(){
-    int n;
-    printf("Digite um número: ");
-    scanf("%d", &n);
-    if(n % 2 == 0){
-        printf("O número %d é par\n", n);
-    }else{
-        printf("O número %d é ímpar\n", n);
+    if (numero % 2 == 0)
+    {
+        printf("O numero %d eh PAR", numero);
     }
+    else if (numero % 2 != 0)
+    {
+        printf("O numero %d eh IMPAR", numero);
+    }
+    else
+    {
+        printf("Caractere inválido");
+    }
+    
+    
+
     return 0;
 }
