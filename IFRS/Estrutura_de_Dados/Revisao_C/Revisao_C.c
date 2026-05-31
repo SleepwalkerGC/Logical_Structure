@@ -5,7 +5,7 @@
 
 #define TAM_NOME 50
 #define TAM_CPF 12
-#define TAM_CAT 4  // Increased from 3 to 4 to accommodate null terminator
+#define TAM_CAT 4
 
 typedef struct {
     int dia; //4 bytes
@@ -103,7 +103,7 @@ void buscar() {
 void excluir() {
     char nome[TAM_NOME];
     printf("Digite o nome a ser buscado:");
-    leia(nome, TAM_NOME);
+    leia(nome, TAM_NOME);   
     int reg = onde(nome);
     if (reg == -1) {
         printf("Cliente não encontrado.\n");
